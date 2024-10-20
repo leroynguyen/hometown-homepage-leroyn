@@ -1,0 +1,242 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+*/
+
+/* GLOBAL STYLES */
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  background-image: url("images/toronto2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-attachment: fixed;
+  color: azure;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 20px 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HERO SECTION */
+
+#hero {
+  height: 650px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-title {
+  position: relative;
+  bottom: 15%;
+  font-size: 220px;
+  background: linear-gradient(to top, #341993 20%, azure 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px black;
+  letter-spacing: 10px;
+}
+
+#hero-subtitle {
+  position: relative;
+  bottom: 200px;
+  font-size: 20px;
+  font-weight: 250;
+  text-shadow: 1px 1px 1px #341993;
+}
+
+/* span.shifted-text {
+  margin-left: 170px; */
+/* } */
+
+/* ACTIVITIES SECTION */
+
+#activities-title {
+  display: flex;
+  justify-content: center;
+  margin: 20px 40px;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 6px black;
+  background: linear-gradient(
+    to top,
+    rgba(7, 12, 31, 0.7) 5%,
+    rgba(51, 57, 130, 0.7) 95%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+
+#activities-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px 20px;
+  padding: 30px;
+  font-size: 30px;
+  column-gap: 30px;
+  background: rgba(10, 14, 27, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+}
+
+.activity-card {
+  display: flex;
+  width: 20vw;
+  height: 40vh;
+  border: 3px solid #fd1c58;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+#cntower-edgewalk,
+#dundas-square,
+#canadas-wonderland {
+  background-size: cover;
+  background-position: center;
+}
+
+#cntower-edgewalk {
+  background-image: url("images/cntoweredgewalk.jpg");
+}
+
+#dundas-square {
+  background-image: url("images/dundas-square.png");
+}
+
+#canadas-wonderland {
+  background-image: url("images/canadas-wonderland.jpg");
+}
+
+.overlay {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(14, 26, 64, 0.8) 40%,
+    rgba(79, 72, 128, 0.8) 100%
+  );
+}
+
+.activity-card:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+  font-size: 20px;
+  text-align: start;
+  color: azure;
+}
+
+.text h2 {
+  text-align: center;
+}
+
+/* GUIDE SECTION */
+
+#guide {
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+  padding: 40px;
+  background-color: rgba(7, 12, 31, 0.7);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+}
+
+#guide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 70px;
+  column-gap: 30px;
+  background: linear-gradient(
+    to top,
+    rgba(7, 12, 31, 1) 5%,
+    rgba(51, 57, 130, 1) 95%
+  );
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#guide-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 225px;
+  height: 225px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px black;
+  overflow: hidden;
+}
+
+#guide-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.6);
+  object-position: 0 -20%;
+}
+
+#guide-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* FOOTER SECTION */
+
+footer p {
+  display: flex;
+  justify-content: center;
+  margin: 20px 40px;
+  padding: 20px 30px;
+  font-size: 15px;
+  background: linear-gradient(
+    to bottom,
+    rgba(7, 12, 31, 0.9) 5%,
+    rgba(51, 57, 130, 0.7) 95%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
